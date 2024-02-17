@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eKVM", "eKVM\eKVM.csproj", "{EA463EEA-CEA5-4888-950E-E8FE314DA184}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eKVM.Desktop", "eKVM.Desktop\eKVM.Desktop.csproj", "{BC752D0C-8444-4593-9E04-1B0DEBD3BE79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA463EEA-CEA5-4888-950E-E8FE314DA184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA463EEA-CEA5-4888-950E-E8FE314DA184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA463EEA-CEA5-4888-950E-E8FE314DA184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA463EEA-CEA5-4888-950E-E8FE314DA184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC752D0C-8444-4593-9E04-1B0DEBD3BE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC752D0C-8444-4593-9E04-1B0DEBD3BE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC752D0C-8444-4593-9E04-1B0DEBD3BE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC752D0C-8444-4593-9E04-1B0DEBD3BE79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F48F603-5F2F-49C3-91A4-48A2ACAFA6F4}
+	EndGlobalSection
+EndGlobal
