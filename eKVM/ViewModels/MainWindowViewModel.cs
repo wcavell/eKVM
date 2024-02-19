@@ -1,17 +1,33 @@
-﻿using FlashCap;
-using SkiaSharp;
-using System.Threading.Tasks;
-using System.Threading;
-using System;
-using Epoxy;
+﻿////////////////////////////////////////////////////////////////////////////
+//
+// FlashCap - Independent camera capture library.
+// Copyright (c) Kouji Matsui (@kozy_kekyo, @kekyo@mastodon.cloud)
+//
+// Licensed under Apache-v2: https://opensource.org/licenses/Apache-2.0
+//
+////////////////////////////////////////////////////////////////////////////
+
 using Avalonia.Controls;
+using Epoxy;
+using FlashCap.Devices;
+using SkiaSharp;
+using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using FlashCap;
+
+// NOTE: This sample application may crash when exit on .NET Framework (net48) configruation.
+//   Maybe related Avalonia's this issue (in 0.10.13).
+//   Avalonia app crashes on exit (.net framework only)
+//   https://github.com/AvaloniaUI/Avalonia/issues/7579
 
 namespace eKVM.ViewModels;
 
-public class MainViewModel : ViewModelBase
+[ViewModel]
+public sealed class MainWindowViewModel
 {
     private enum States
     {
@@ -49,7 +65,7 @@ public class MainViewModel : ViewModelBase
     public string? Statistics2 { get; private set; }
     public string? Statistics3 { get; private set; }
 
-    public MainViewModel():base()
+    public MainWindowViewModel()
     {
         this.UpdateCurrentState(States.NotShown);
 
